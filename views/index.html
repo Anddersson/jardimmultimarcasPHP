@@ -1,0 +1,92 @@
+
+
+    <div class="fundo"> 
+        <div  >
+            <img class="imagemcarro" src="https://www.planetcarsz.com/assets/uploads/de-Esfera_2.jpg"></a>
+        </div>
+    </div>
+
+    <!-- Destaques-->
+<div class="fundo">
+        <div class="destaque">
+          <h1><i style="color:white;">Veículos em </i><i style="color:red;">destaque</i></h1>
+        </div>
+    
+
+    <div class="slideshow-container">
+    
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 3</div>
+      <img src="res/site/img/CIVIC.jpeg" style="width:100%">
+      
+      
+      <script type="text/javascript">
+        function Nova10()
+        {
+        location.href="image_civic.html"
+        }
+        </script>
+        <input type="button" value="+ Fotos" onClick="Nova10()">
+
+    </div>
+    
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 3</div>
+      <img src="res/site/img/CORSA.jpeg" style="width:100%">
+      
+      <script type="text/javascript">
+        function Nova11()
+        {
+        location.href="image_corsa_sedan.html"
+        }
+        </script>
+        <input type="button" value="+ Fotos" onClick="Nova11()">
+    </div>
+    
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 3</div>
+      <img src="res/site/img/CRV.jpeg" style="width:100%">
+      
+
+      <script type="text/javascript">
+        function Nova12()
+        {
+        location.href="image_Cr-v.html"
+        }
+        </script>
+        <input type="button" value="+ Fotos" onClick="Nova12()">
+    </div>
+    
+    </div>
+    <br>
+    
+    <div style="text-align:center">
+      <span class="dot"></span> 
+      <span class="dot"></span> 
+      <span class="dot"></span> 
+    </div>
+    
+    <script>
+    var slideIndex = 0;
+    showSlides();
+    
+    function showSlides() {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("dot");
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) {slideIndex = 1}    
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " active";
+      setTimeout(showSlides, 5000); // Change image every 2 seconds
+    }
+    </script>
+
+</div>
+

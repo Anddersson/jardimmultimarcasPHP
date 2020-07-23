@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Galeria de Imagens</title>
+	<style type="text/css">
+		img{
+			border-radius: 8px;
+			background: black;
+			padding: 16px;
+			border: 1px solid yellow;
+		}
+	</style>
+
+	<script >
+		function exibir(imagens){
+			//Informamos o ID da tag IMG que irá exibir a galeria	
+			var imagem = document.getElementById("galeria");
+			//Mostrar qual imagem foi escolhida
+			switch(imagens){
+				case "1":
+				imagem.src="img/Ford focus 1.6/Ford_focus_1.6_cambio_manual_completo_foto_1.jpeg";
+				
+				break;
+
+				case "2":
+				imagem.src="img/Ford focus 1.6/Ford_focus_1.6_cambio_manual_completo_foto_2.jpeg";
+				
+				break;
+
+				case "3":
+				imagem.src="img/Ford focus 1.6/Ford_focus_1.6_cambio_manual_completo_foto_3.jpeg";
+				
+				break;
+
+				case "4":
+				imagem.src="img/Ford focus 1.6/Ford_focus_1.6_cambio_manual_completo_foto_4.jpeg";
+				
+				break;
+
+				case "5":
+				imagem.src="img/Ford focus 1.6/Ford_focus_1.6_cambio_manual_completo_foto_5.jpeg";
+				
+				break;
+
+                case "6":
+				imagem.src="img/Ford focus 1.6/Ford_focus_1.6_cambio_manual_completo_foto_6.jpeg";
+				
+				break;
+
+                
+          
+			}
+
+		}
+	</script>
+</head>
+<body>
+	<table width="672"  class="img_logo">
+		<tr>
+		 	<td colspan="5" class="img_logo"><img src="img/Ford focus 1.6/Ford_focus_1.6_cambio_manual_completo_foto_6.jpeg"; name="galeria" width="680" height="500" id="galeria" /></td>
+		</tr>
+		
+		<tr>
+			<td width="140"><img src="img/Ford focus 1.6/Ford_focus_1.6_cambio_manual_completo_foto_1.jpeg"; width="100" height="90" onMouseOver="javascript:exibir('1');"></td>
+            <td width="140"><img src="img/Ford focus 1.6/Ford_focus_1.6_cambio_manual_completo_foto_2.jpeg"; width="100" height="90" onMouseOver="javascript:exibir('2');"></td>
+            <td width="140"><img src="img/Ford focus 1.6/Ford_focus_1.6_cambio_manual_completo_foto_3.jpeg"; width="100" height="90" onMouseOver="javascript:exibir('3');"></td>
+            <td width="140"><img src="img/Ford focus 1.6/Ford_focus_1.6_cambio_manual_completo_foto_4.jpeg"; width="100" height="90" onMouseOver="javascript:exibir('4');"></td>
+            <td width="140"><img src="img/Ford focus 1.6/Ford_focus_1.6_cambio_manual_completo_foto_5.jpeg"; width="100" height="90" onMouseOver="javascript:exibir('5');"></td>
+            <td width="140"><img src="img/Ford focus 1.6/Ford_focus_1.6_cambio_manual_completo_foto_6.jpeg"; width="100" height="90" onMouseOver="javascript:exibir('6');"></td>
+            
+           
+           
+
+		</tr>
+
+
+    </table>	
+    
+    <script type="text/javascript">
+        function Nova1()
+        {
+        location.href="estoque.html"
+        }
+        </script>
+        <input type="button" value="Voltar" onClick="Nova1()">
+
+</body>
+</html>
+
